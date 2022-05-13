@@ -1,0 +1,326 @@
+<!Doctype html>
+
+<html>
+
+<head>
+
+<title> Contact Us</title>
+
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["First Name"].value;
+    if (x == null || x == "") 
+	{
+        alert("Name must be filled out");
+        return false;
+    }
+	else {
+	
+	alert("Request Submitted");
+	
+	}
+	}
+	
+	
+	
+	function validateForm() {
+	    var x = document.forms["myForm"]["Last Name"].value;
+    if (x == null || x == "") 
+	{
+        alert("Name must be filled out");
+        return false;
+    }
+	else {
+	
+	alert("Request Submitted");
+	
+	}
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+body {
+      background-image:logo.png;
+	  }
+
+header {
+        
+		 text-align:center;
+		
+        background-color:#7777;
+
+}
+
+
+
+a {
+text-decoration: none;
+}
+
+
+
+.center {
+        margin-top: 5px;
+        padding: 2px;
+        color:black;
+        text-align:center;
+		
+       
+}
+
+
+
+ul {
+
+background-color: #aeaca8;
+padding: 10px;
+margin: 0px auto 0px auto;
+border-top: 2px solid #eeeeee;
+border-bottom: 2px solid #eeeeee;
+border-radius:5px;
+text-align: center;
+}
+
+li  {
+display: inline;
+text-decoration: none;
+
+}
+
+
+li a {
+display: inline;
+margin: 0px 30px 10px 5px;
+text-decoration: none;
+color:#de6581;
+
+}
+
+
+
+#Contact {
+          border-radius: 40px;
+border: 1px solid rgb(255,128,255);
+padding: 30px;
+margin-top:5px;
+margin-bottom: 5px;
+
+            
+
+}
+
+
+
+fieldset {
+
+border: 1px solid #dcdcdc;
+border-radius: 10px;
+padding: 20px;
+
+
+
+
+}
+
+
+legend {
+background-color: #efefef;
+border: 1px solid #dcdcdc;
+border-radius: 10px;
+padding: 10px 20px;
+text-align: left;
+text-transform: uppercase;
+
+}
+
+input {
+font-size: 120%;
+color: #5a5854;
+background-color: #f2f2f2;
+border: 1px solid #bdbdbd;
+border-radius: 5px;
+padding: 5px 5px 5px 30px;
+background-repeat: no-repeat;
+background-position: 8px 9px;
+display: block;
+width:260px;
+margin-bottom: 10px;
+
+}
+
+
+
+
+#too {
+       margin-left:10px;
+
+
+}
+
+
+
+
+
+
+
+
+footer {
+       
+		border: 1px solid #eeeeee;
+		background-color: #aeaca8;
+		padding: 10px;
+		margin: 0px auto 0px auto;
+		border-radius: 5px;
+		color: #de6581;
+		
+		text-align:center;
+		}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+<body>
+
+<script type= "text/javascript">
+
+
+var pie = prompt ("Subscribe to our weekly notification", "Enter your E-mail");
+
+if (pie) {
+
+alert("Thanks for Subscribing")
+}
+else {
+alert("oops")
+}
+
+
+/*
+function prompt( "Subscribe to our weekly notification", " Enter your E-mail")
+	{
+	  if (prompt("Are u sure u want to submit") ) {
+			alert("you select ok");
+			return true;
+	  
+	  }
+	  
+	  else {
+			alert("you select cancel");
+			return false;
+	  
+	  }
+	
+	}
+
+
+prompt();
+*/
+
+</script>
+
+
+
+
+<header>
+
+
+
+
+
+
+<a href="index.html" target="_blank" > <h1 class="center"> Orhange World </h1> </a>
+
+
+
+
+<ul>
+
+<li><a href="index.html"> Home  </a> </li>
+<li><a href="About Us.html" target="_blank"> About Us </a> </li>
+<li><a href="Contact Us.html"> Contact Us </a> </li>
+
+</ul>
+
+</header>
+
+<div Id="Contact">
+
+<form   form name="myForm" action=""
+onsubmit="return validateForm()" method="post"   >
+
+
+<fieldset>
+
+<legend>
+Personal Information
+</legend>
+
+
+<div id="too"> First Name: <br></div>
+<input type="text" name="First Name" placeholder="Enter First Name" ><br>
+
+<div id="too"> Last Name: <br> </div>
+<input type="text" name="Last Name" placeholder="Enter Last Name" ><br>
+
+<div id="too"> Date Of Birth: <br> </div>
+
+<input type="date"  name="Date Of Birth" ><br>
+
+<div id="too"> E-mail: <br> </div>
+
+<input type="email" name="email" placeholder="Enter E-mail"  />
+
+
+</fieldset>
+
+
+
+<p>Your Message for Orhange World?</p>
+<textarea name="comments" cols="130" rows="10" resize="none">Enter
+your Message...
+
+</textarea><br><br>
+
+<input type="submit" value="submit" />
+
+
+
+
+</form>
+
+
+
+</div>
+
+
+<footer>
+&copy; 2019 Orhange World
+</footer>
+
+
+
+
+
+
+</body>
